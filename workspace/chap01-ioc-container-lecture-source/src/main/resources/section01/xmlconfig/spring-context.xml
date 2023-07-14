@@ -3,10 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+    <!-- Member member = new Member(1, "user01", "pass01", "홍길동"); -->
+
     <bean id="member" class="com.ohgiraffers.common.Member">
         <!-- <constructor-arg/>와 우측은 동일<constructor-arg></constructor-arg>-->
-
-<!--        Member member = new Member(1, "user01", "pass01", "홍길동");-->
 
         <constructor-arg index="0" value="1"/>
         <constructor-arg name="id" value="user01"/>

@@ -10,8 +10,11 @@ public class Application {
 
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(ContextConfiguration.class);
+                // 자바 ApplicationContext구현체
+                                                      // contextConfiguration.class에 대한 모든 사용권한 위임.
 
         Member member = context.getBean("getMember", Member.class);
+        // common의 Member라는 타입의 빈 꺼내옴
 
         System.out.println("member =" + member);
 
